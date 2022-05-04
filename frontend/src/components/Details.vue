@@ -15,16 +15,9 @@
               <span v-if="item.includes('Changelog')" class="badge medium"> Changelog </span>
               <span v-if="item.includes('Maintainers email')" class="badge medium"> Ownership </span>
               <span v-if="item.includes('License')" class="badge high"> License </span>
-              <span v-if="item.includes('License on headers')" class="badge low"> LicenseOnHeaders</span>
-              <span v-if="item.includes('License on readme')" class="badge low"> LicenseOnReadme</span>
               <span v-if="item.includes('Do not have binaries')" class="badge high"> Binaries </span>
               <span v-if="item.includes('Test directory')" class="badge medium"> TestDir </span>
               <span v-if="item.includes('Contributing')" class="badge medium"> Contributing </span>
-              <span v-if="item.includes('Code of Conduct')" class="badge low"> CodeOfConduct </span>
-              <span v-if="item.includes('Security')" class="badge low"> Security </span>
-              <span v-if="item.includes('Support')" class="badge low"> Support </span>
-              <span v-if="item.includes('Issue template')" class="badge low"> IssueTemplate </span>
-              <span v-if="item.includes('Pull request template')" class="badge low"> PullRequestTemplate </span>
             </span>
           </td>
         </template>

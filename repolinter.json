@@ -77,29 +77,6 @@
       "policyInfo": "A repository must contain a permissive or weak copy-left license",
       "policyUrl": "https://opensource.saucelabs.com/docs/license-guide/"
     },
-    "License on headers": {
-      "level": "warning",
-      "rule": {
-        "type": "file-starts-with",
-        "options": {
-          "globsAll": ["**/*.js", "!node_modules/**"],
-          "lineCount": 5,
-          "patterns": ["Copyright", "License"],
-          "flags": "i"
-        }
-      }
-    },
-    "License on readme": {
-      "level": "error",
-      "rule": {
-        "type": "file-contents",
-        "options": {
-          "globsAll": ["README*"],
-          "content": "license",
-          "flags": "i"
-        }
-      }
-    },
     "Do not have binaries": {
       "level": "error",
       "rule": {
@@ -128,59 +105,6 @@
         "options": {
           "globsAny": ["{docs/,.github/,}CONTRIB*"],
           "nocase": true
-        }
-      }
-    },
-    "Code of Conduct": {
-      "level": "error",
-      "rule": {
-        "type": "file-existence",
-        "options": {
-          "globsAny": [
-            "{docs/,.github/,}CODEOFCONDUCT*",
-            "{docs/,.github/,}CODE-OF-CONDUCT*",
-            "{docs/,.github/,}CODE_OF_CONDUCT*"
-          ],
-          "nocase": true
-        }
-      }
-    },
-    "Security": {
-      "level": "error",
-      "rule": {
-        "type": "file-existence",
-        "options": {
-          "globsAny": ["{docs/,.github/,}SECURITY.md"]
-        }
-      }
-    },
-    "Support": {
-      "level": "error",
-      "rule": {
-        "type": "file-existence",
-        "options": {
-          "globsAny": ["{docs/,.github/,}SUPPORT*"],
-          "nocase": true
-        }
-      }
-    },
-    "Issue template": {
-      "level": "error",
-      "rule": {
-        "type": "file-existence",
-        "options": {
-          "dirs": true,
-          "globsAny": ["ISSUE_TEMPLATE*", ".github/ISSUE_TEMPLATE*"]
-        }
-      }
-    },
-    "Pull request template": {
-      "level": "error",
-      "rule": {
-        "type": "file-existence",
-        "options": {
-          "dirs": true,
-          "globsAny": ["PULL_REQUEST_TEMPLATE*", ".github/PULL_REQUEST_TEMPLATE*"]
         }
       }
     }
